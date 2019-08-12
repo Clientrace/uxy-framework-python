@@ -1,10 +1,12 @@
+"""
+Uxy application core
+"""
+
+from _uxy_core._components import router
+from _uxy_core._modules.e2e import resp_builder
 
 
-from chatbot_core._components import router
-from chatbot_core._modules.e2e import resp_builder
-
-
-def hanlder(event):
+def handler(event):
   msg_data = event['entry'][0]['messaging'][0]
   userID = msg_data['sender']['id']
 
@@ -15,8 +17,6 @@ def hanlder(event):
     'status' : 200,
     'body' : 'Ok'
   }
-
-
 
 
 
