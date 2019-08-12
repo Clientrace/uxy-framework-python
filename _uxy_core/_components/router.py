@@ -7,8 +7,7 @@ Documented via reST
 Chabot state router
 """
 
-
-from datetime import datetime, timedelta
+from _uxy_core import appconfig
 from _uxy_core.utility import config
 from _uxy_core.utility.aws_services.dynamodb import Dynamodb
 from _uxy_core._modules.e2e import input_parser
@@ -16,15 +15,11 @@ from _uxy_core._modules.e2e import view_parser
 from _uxy_core._components import convo_data
 from _uxy_core._components import spiel
 from _uxy_core._components import persist
-
+from datetime import datetime, timedelta
 
 global DYNAMODB
 DYNAMODB = Dynamodb(
-  config.var('DYNAMODB_USER_SESSION_TABLE'),
-  {
-    'aws_id' : config.var('AWS_ACCESS_KEY_ID'),
-    'aws_secret' : config.var('AWS_SECRET_ACCESS_KEY')
-  }
+  appconfig['app:name']+'uxy-session-'+appconfig['app:stage']
 )
 
 # Log Dynamodb Session Record Error
@@ -173,12 +168,12 @@ def exe(userID, source, inputData, intentName):
       cur_session, errors = get_route(userID)
       inputData['errors'] = int(errors)
   except Exception as e:
-    if( hasattr(e, 'message') ):
-      print('[ROUTE ERROR]: '+str(e.message))
-    else:
-      print('[ROUTE ERROR]: '+str(e))
+    print('[ROUTE ERROR]: '+str(e))
     cur_session = 'error_fallback'
 
   return route(userID, cur_session, inputData)
+
+
+
 
 
