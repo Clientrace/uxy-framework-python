@@ -1,10 +1,19 @@
 {
   "FS-00" : {
-    "description" : "Welcome, Initial message",
+    "description" : "Welcome/Initial message",
     "data" : [
       "Hi :firstname:! I'm :botname:, nice to meet you!",
       "Hello, I'm :botname:. What can I do for you?"
     ],
     "delay" : 0
+  },
+  "FS-01" : {
+    "description" : "Main message",
+    "data" : [
+      "Hello there!",
+      "Hi!",
+      "Hola amigo"
+    ]
   }
 }
+

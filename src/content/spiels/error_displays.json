@@ -1,19 +1,24 @@
 {
   "ERR-00" : {
     "description" : "Internal Code Error",
-    "data" : "Something went wrong.",
+    "data" : [ 
+      "Something went wrong."
+    ],
     "delay" : 0
   },
   "ERR-01" : {
     "description" : "fallback response",
-    "data" : "Sorry, I did not get what you mean.",
+    "data" : [
+      "Sorry, I did not get what you mean."
+    ],
     "delay" : 0
   },
   "ERR-02" : {
     "description" : "User selected option doesn't match the provided set of options",
-    "data" : "Please choose from the options provided:",
+    "data" : [ 
+      "Please choose from the options provided:" 
+    ],
     "delay" : 0
   }
 }
-
 
