@@ -1,0 +1,29 @@
+# Distribution / packaging
+__pycache__/
+.vscode/
+venv/
+.Python
+*.pyc
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Uxy Generated Files
+dist.zip
+
+# Serverless directories
+.serverless
+
+.vscode/
