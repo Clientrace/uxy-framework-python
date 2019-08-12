@@ -8,9 +8,9 @@ Parse user view from component spiels
 
 import re
 import json
-from uxy_app.chatbot_core._components import spiel 
-from uxy_app.chatbot_core._components import convo_data 
-from uxy_app.shared.configuration import config
+import _uxy_core
+from _uxy_core._components import spiel 
+from _uxy_core._components import convo_data 
 
 global VIEW_DIR
 VIEW_DIR = 'uxy_app/chatbot_core/_components/view/'
@@ -159,7 +159,7 @@ def exe(userID, sessionName, userInput):
       'delay' : display['delay']
     })
 
-  if( config.environment == 'dev' ):
+  if( _uxy_core.environment == 'dev' ):
     state = '[STATE]: ' + sessionName
     responses = spiel.free_text(state, 0) + responses
 

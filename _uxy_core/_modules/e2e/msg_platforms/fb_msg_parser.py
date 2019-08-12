@@ -41,7 +41,7 @@ def send_img():
 
 
 def exe(userID, response):
-  facebook = Facebook(userID, chatbot_core._environment_.get('FACEBOOK','FB_PAGE_TOKEN'))
+  facebook = Facebook(userID, _uxy_core.environment.get('FACEBOOK','FB_PAGE_TOKEN'))
   facebook.send_action()
 
   response['data'] = parse_string_codes(facebook, response['data'])
