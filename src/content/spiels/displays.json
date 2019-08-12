@@ -1,0 +1,10 @@
+{
+  "FS-00" : {
+    "description" : "Welcome, Initial message",
+    "data" : [
+      "Hi :firstname:! I'm :botname:, nice to meet you!",
+      "Hello, I'm :botname:. What can I do for you?"
+    ],
+    "delay" : 0
+  }
+}
