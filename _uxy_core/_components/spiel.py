@@ -12,7 +12,7 @@ import json
 import random
 
 global DISPLAY_DIR
-DISPLAY_DIR = 'dist/content/spiels/'
+DISPLAY_DIR = 'src/content/spiels/'
 
 
 # Load Display Json

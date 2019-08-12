@@ -1,7 +1,7 @@
 """
 Authored by Kim Clarence Penaflor
 07/30/2019
-version 0.0.1
+version 0.0.2
 Documented via reST
 
 Chabot state router
@@ -127,7 +127,7 @@ def route(userID, sessionName, data=None):
   responses,altResponse,choices,optionMatched,valid,maxRetry = view_parser.exe(userID,sessionName,data)
 
   if( data ):
-    unit = __import__('uxy_app.chatbot_core._components.unit.'+sessionName,fromlist=[sessionName])
+    unit = __import__('src.components.unit.'+sessionName,fromlist=[sessionName])
     responses, unitValid = unit.exe(userID, data, responses, altResponse, choices, optionMatched, valid, maxRetry)
     if( unitValid != None ):
       if( not unitValid ):

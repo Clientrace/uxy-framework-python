@@ -1,7 +1,7 @@
 """
 Authored by Kim Clarence Penaflor
 07/30/2019
-version 0.0.1
+version 0.0.2
 Documented via reST
 Parse user view from component spiels
 """
@@ -13,7 +13,7 @@ from _uxy_core._components import spiel
 from _uxy_core._components import convo_data 
 
 global VIEW_DIR
-VIEW_DIR = 'uxy_app/chatbot_core/_components/view/'
+VIEW_DIR = 'src/components/view/'
 
 
 # Get view json

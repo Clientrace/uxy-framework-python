@@ -1,20 +1,17 @@
 """
 Authored by Kim Clarence Penaflor
 07/30/2019
-version 0.0.1
+version 0.0.2
 Documented via reST
 Holds Chatbot-User conversation data
 """
 
-# from chatbot_core.shared.configuration import config
-# from uxy_app.utility.aws_services.dynamodb import Dynamodb
-
-from chatbot_core.shared.configuration import config
-
+from _uxy_core.utility.aws_services.dynamodb import Dynamodb
+from _uxy_core import appconfig
 
 global DYNAMODB
 DYNAMODB = Dynamodb(
-  config.var('DYNAMODB_USER_SESSION_TABLE')
+  appconfig['app:name']+'uxy-session-'+appconfig['app:stage']
 )
 
 # Save DB Item
