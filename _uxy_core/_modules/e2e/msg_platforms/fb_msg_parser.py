@@ -5,8 +5,8 @@ version 0.0.1
 Documented via reST
 """
 
-import chatbot_core
-from chatbot_core.utility.api_wrappers.facebook import Facebook
+import _uxy_core
+from _uxy_core.utility.api_wrappers.facebook import Facebook
 
 
 def parse_string_codes(fb, string_msg):
