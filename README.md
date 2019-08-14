@@ -14,7 +14,7 @@ like telegram, viber, twitter in the future. Have fun.
 |── _uxy_core
 | |── _components
 | |── _modules
-| |   └── e2e
+| |   |── e2e
 | |   └── msg_platforms
 | └── utility
 |     |
