@@ -1,14 +1,13 @@
 # uxy-framework-python
 ======
 This is an AWS chatbot framework for python and initially intended for personal use but then I decided
-to share it here. This heavily rely on amazon for its infra and you'll an AWS account to use this (it's not
+to share it here. This heavily rely on amazon for its infra and you'll need an AWS account to use this (it's not
 that hard creating one: https://portal.aws.amazon.com/billing/signup#/start). Amazon also provides free
-tier access for new users and this can also be the (if you're not familiar on amazon yet) start of your
+tier access for new users and this can also be the (if you're not familiar with amazon yet) start of your
 journey in amazon web services. Uxy uses aws lambda for the application logic, aws dynamodb for state/conversation
-data storing, and api gateway for exposing a RESTful endpoint that you need to integrate with your Facebook
-application. I'm also planning to add other messaging channel like telegram, viber, twitter in the future.
-Have fun.
-
+data storing, s3 bucket for resource blueprint and assets storage, and api gateway for exposing a RESTful endpoint
+that you need to integrate with your Facebook application. I'm also planning to add other messaging channel
+like telegram, viber, twitter in the future. Have fun.
 
 #### Project Package Structure
 ======
