@@ -15,20 +15,20 @@ like telegram, viber, twitter in the future. Have fun.
 | |── _components
 | |── _modules
 | |   └── e2e
-|	|   └── msg_platforms
-|	└── utility
+| |   └── msg_platforms
+| └── utility
 |     |
 |     |── api_wrappers
 |     └── aws_services
 |
 └──src
   |── components
-  |	|── unit
-  |	└── view
+  | |── unit
+  | └── view
 	|── content
-	|	|── assets
-	|	└── spiels
-	└── env
+	| |── assets
+  | └── spiels
+  └── env
 ```
 
 * _uxy_core - application core modules
