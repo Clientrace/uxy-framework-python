@@ -1,4 +1,4 @@
-# uxy-framework-python
+uxy-framework-python
 ======
 This is an AWS chatbot framework for python and initially intended for personal use but then I decided
 to share it here. This heavily rely on amazon for its infra and you'll need an AWS account to use this (it's not
