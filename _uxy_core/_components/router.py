@@ -8,7 +8,6 @@ Chabot state router
 """
 
 from _uxy_core import appconfig
-from _uxy_core.utility import config
 from _uxy_core.utility.aws_services.dynamodb import Dynamodb
 from _uxy_core._modules.e2e import input_parser
 from _uxy_core._modules.e2e import view_parser
