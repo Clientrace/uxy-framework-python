@@ -17,17 +17,15 @@ like telegram, viber, twitter in the future. Have fun.
 | |   |── e2e
 | |   └── msg_platforms
 | └── utility
-|     |
 |     |── api_wrappers
 |     └── aws_services
-|
 └──src
   |── components
-  | |── unit
-  | └── view
+  |   |── unit
+  |   └── view
   |── content
-	| |── assets
-  | └── spiels
+  |   |── assets
+  |   └── spiels
   └── env
 ```
 
