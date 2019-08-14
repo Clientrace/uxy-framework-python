@@ -14,17 +14,17 @@ like telegram, viber, twitter in the future. Have fun.
 |── _uxy_core
 | |── _components
 | |── _modules
-| |	└── e2e
-|	|		└── msg_platforms
+| |   └── e2e
+|	|   └── msg_platforms
 |	└── utility
-|		|
-|		|── api_wrappers
-|		└── aws_services
+|     |
+|     |── api_wrappers
+|     └── aws_services
 |
 └──src
-	|── components
-	|	|── unit
-	|	└── view
+  |── components
+  |	|── unit
+  |	└── view
 	|── content
 	|	|── assets
 	|	└── spiels
@@ -47,17 +47,17 @@ like telegram, viber, twitter in the future. Have fun.
   "dev" : {	<development environment>
    "fileReplacements" : [
     {
-		 "replace" : <file to replace>,
-		 "with" : <replacement file>
+     "replace" : <file to replace>,
+     "with" : <replacement file>
 		}
    ]
  },
  "prod" : {	<production environment>
   "fileReplacements" : [
-	  {
+    {
      "replace" : <file to replace>,
      "with" : <replacement file>
- 	  }
+    }
    ]
   }
  },
