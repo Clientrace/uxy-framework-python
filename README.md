@@ -25,14 +25,14 @@ like telegram, viber, twitter in the future. Have fun.
   |── components
   | |── unit
   | └── view
-	|── content
+  |── content
 	| |── assets
   | └── spiels
   └── env
 ```
 
-* _uxy_core - application core modules
-* src - chatbot source files
+* **_uxy_core** - application core modules
+* **src** - chatbot source files
 
 
 #### Application Configuration (uxy.json)
