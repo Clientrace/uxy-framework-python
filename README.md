@@ -11,7 +11,7 @@ like telegram, viber, twitter in the future. Have fun.
 
 #### Project Package Structure
 ======
-
+```
 |── _uxy_core
 |	|── _components
 |	|── _modules
@@ -30,13 +30,14 @@ like telegram, viber, twitter in the future. Have fun.
 	|	|── assets
 	|	└── spiels
 	└── env
-
+```
 
 * _uxy_core - application core modules
 * src - chatbot source files
 
 
 Application Configuration (uxy.json)
+```
 {
 	"app:name" : <application name>,
 	"app:version" : <application version>,
@@ -69,5 +70,5 @@ Application Configuration (uxy.json)
 		}
 	}
 }
-
+```
 
