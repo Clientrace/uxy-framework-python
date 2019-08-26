@@ -19,8 +19,11 @@ var/
 .installed.cfg
 *.egg
 
+test.py
+
 # Uxy Generated Files
 dist.zip
+.tmp/
 
 # Serverless directories
 .serverless
