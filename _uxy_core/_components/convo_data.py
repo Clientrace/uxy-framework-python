@@ -11,7 +11,7 @@ from _uxy_core import appconfig
 
 global DYNAMODB
 DYNAMODB = Dynamodb(
-  appconfig['app:name']+'uxy-session-'+appconfig['app:stage']
+  appconfig['app:name']+'-uxy-session-'+appconfig['app:stage']
 )
 
 # Save DB Item
