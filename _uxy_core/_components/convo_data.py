@@ -44,9 +44,13 @@ def get_item(userID, key):
   }
 
   data = DYNAMODB.get_item(itemKey)
+  print(data['Item'])
   if( 'Item' in data ):
     if( key in data['Item'] ):
-      return data['Item'][key]['S']
+      if( 'S' in data['Item'][key] ):
+        return data['Item'][key]['S']
+      if( 'N' in data['Item'][key] ):
+        return data['Item'][key]['N']
     return None
   return None
 
