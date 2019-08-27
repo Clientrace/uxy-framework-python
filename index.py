@@ -9,11 +9,11 @@ from _uxy_core.utility.common import fbtoken_verifier
 
 def lambda_handler(event, context):
   try:
-    if( event['http_method'] == 'GET' ):
-      return fbtoken_verifier.verify(event['query_params'], \
+    if( event['method'] == 'GET' ):
+      return fbtoken_verifier.verify(event['queryParams'], \
         _uxy_core.appconfig['fb:verifyToken'])
 
-    if( event['http_method'] == 'POST' ):
+    if( event['method'] == 'POST' ):
       return core.handler(event['body'])
 
     return {
