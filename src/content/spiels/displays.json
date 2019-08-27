@@ -13,7 +13,8 @@
       "Hello there!",
       "Hi!",
       "Hola amigo"
-    ]
+    ],
+    "delay" : 0
   }
 }
 
