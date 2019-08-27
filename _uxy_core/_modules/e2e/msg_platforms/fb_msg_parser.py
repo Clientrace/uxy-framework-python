@@ -30,7 +30,6 @@ def send_text_msg(fb, blueprint):
   fb.send_txt_msg(blueprint['data'])
 
 
-# TODO Send quick reply
 def send_quick_reply(fb, blueprint):
   options = blueprint['options']
   buttons = []
@@ -42,9 +41,22 @@ def send_quick_reply(fb, blueprint):
     buttons
   )
 
-# TODO Send Button template
-def send_btn_template():
-  pass
+def send_btn_template(fb, blueprint):
+  options = blueprint['options']
+  buttons = []
+  for option in options:
+    if( option['type'] == 'postback' ):
+      buttons.append(
+        ['postback', option['buttonName']]
+      )
+    
+    if( option['type'] == 'web_url' ):
+      buttons.append(
+        ['web_url', option['buttonName'], option['url'], option['size'],\
+          option['webview']]
+      )
+
+  fb.send_btn_template(buttons, blueprint['data'])
 
 # TODO Send image multimedia
 def send_img():
