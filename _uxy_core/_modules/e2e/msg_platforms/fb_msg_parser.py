@@ -20,6 +20,9 @@ def parse_string_codes(fb, string_msg):
     firstName = userName['first_name']
     string_msg = string_msg.replace(':firstname:', firstName)
 
+  if( ':botname:' in string_msg ):
+    string_msg = string_msg.replace(':botname:', _uxy_core.appconfig['app:name'])
+
   return string_msg
 
 
