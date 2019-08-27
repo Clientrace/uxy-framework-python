@@ -35,7 +35,7 @@ def exe(userID, sessionName, userInput):
   view = get_view(sessionName)
 
   altDisplay = spiel.get_display(userID, "ERR-02")
-  if( len(view['opions']) == 0 and len(view['content']) > 0 ):
+  if( len(view['options']) == 0 and len(view['content']) > 0 ):
     displayID = view['content'][-1]
     display = spiel.get_display(userID, displayID)
     altResponse = [{
