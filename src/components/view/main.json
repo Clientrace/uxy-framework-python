@@ -1,6 +1,6 @@
 {
   "acceptTypes" : ["any"],
-  "content" : ["FS-02"],
+  "content" : ["FS-01"],
   "optionType" : "text",
   "options" : [],
   "retries" : null
