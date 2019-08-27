@@ -28,8 +28,16 @@ def send_text_msg(fb, blueprint):
 
 
 # TODO Send quick reply
-def send_quick_reply():
-  pass
+def send_quick_reply(fb, blueprint):
+  options = blueprint['options']
+  buttons = []
+  for option in options:
+    buttons.append(option['data'])
+
+  fb.send_quick_reply(
+    blueprint['data'],
+    buttons
+  )
 
 # TODO Send Button template
 def send_btn_template():
@@ -45,5 +53,10 @@ def exe(userID, response):
   facebook.send_action()
 
   response['data'] = parse_string_codes(facebook, response['data'])
+  if( response['type'] == 'txt' or response['type'] == 'text' ):
+    send_text_msg(facebook, response)
+
+  if( response['type'] == 'quick_reply' ):
+    send_quick_reply(facebook, response)
 
 
