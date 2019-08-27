@@ -75,7 +75,7 @@ def reset(userID, attribute):
 
   item = {
     attribute : {
-      'Value' : { 'N' : '0 '}
+      'Value' : { 'N' : '0'}
     }
   }
 
