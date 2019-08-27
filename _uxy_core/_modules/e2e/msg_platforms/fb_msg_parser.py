@@ -21,7 +21,8 @@ def parse_string_codes(fb, string_msg):
     string_msg = string_msg.replace(':firstname:', firstName)
 
   if( ':botname:' in string_msg ):
-    string_msg = string_msg.replace(':botname:', _uxy_core.appconfig['app:name'])
+    string_msg = string_msg.replace(':botname:',\
+      _uxy_core.appconfig['app:name'])
 
   return string_msg
 
@@ -58,13 +59,13 @@ def send_btn_template(fb, blueprint):
 
   fb.send_btn_template(buttons, blueprint['data'])
 
-# TODO Send image multimedia
-def send_img():
-  pass
+def send_img(fb, blueprint):
+  fb.send_btn_template(blueprint['data'])
 
 
 def exe(userID, response):
-  facebook = Facebook(userID, _uxy_core.environment.get('FACEBOOK','FB_PAGE_TOKEN'))
+  facebook = Facebook(userID, _uxy_core.environment.get('FACEBOOK',\
+    'FB_PAGE_TOKEN'))
   facebook.send_action()
 
   response['data'] = parse_string_codes(facebook, response['data'])
