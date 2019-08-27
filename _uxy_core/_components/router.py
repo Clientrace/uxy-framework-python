@@ -18,7 +18,7 @@ from datetime import datetime, timedelta
 
 global DYNAMODB
 DYNAMODB = Dynamodb(
-  appconfig['app:name']+'uxy-session-'+appconfig['app:stage']
+  appconfig['app:name']+'-uxy-session-'+appconfig['app:stage']
 )
 
 # Log Dynamodb Session Record Error
