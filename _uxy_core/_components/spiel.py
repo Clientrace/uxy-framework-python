@@ -41,7 +41,7 @@ def text(userID, displayID):
   display = get_display(userID, displayID)
   return [{
     'type' : 'text',
-    'data' : display['text'],
+    'data' : display['data'],
     'options' : [],
     'prefix' : '',
     'delay' : display['delay']
