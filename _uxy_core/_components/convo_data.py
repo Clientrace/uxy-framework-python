@@ -63,7 +63,7 @@ def increment(userID, attribute):
   }
 
   data = DYNAMODB.increment(itemKey, attribute)
-  return data['Attribute'][attribute]['N']
+  return data['Attributes'][attribute]['N']
 
 # Reset DB Item attrib
 def reset(userID, attribute):
