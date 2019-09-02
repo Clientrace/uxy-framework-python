@@ -75,5 +75,10 @@ def exe(userID, response):
   if( response['type'] == 'quick_reply' ):
     send_quick_reply(facebook, response)
 
+  if( response['type'] == 'btn' ):
+    send_btn_template(facebook, response)
+
+
+
 
 
