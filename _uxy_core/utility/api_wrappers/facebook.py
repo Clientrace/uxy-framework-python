@@ -46,6 +46,8 @@ class Facebook:
     queryString = '?' in route and '&' or '?'
     URL = self.hostURL + '/' + route + queryString + 'access_token='+self.accessToken
     resp = requests.get(URL)
+    print('[FB GET]: resp')
+    print(resp.json())
     return resp.json()
 
 
@@ -66,6 +68,8 @@ class Facebook:
       headers = self.headers,
       data = json.dumps(payload)
     )
+    print('[FB POST]: resp')
+    print(resp.json())
     return resp.json()
 
   def get_user_info(self,reqFields):
