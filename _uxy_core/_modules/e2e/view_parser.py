@@ -86,7 +86,8 @@ def exe(userID, sessionName, userInput):
       if( matchedOption == None ):
         inputValid = False
 
-    errorLog = int(convo_data.get_item(userID, 'errorLog')) + 1
+
+    errorLog = int(convo_data.get_item(userID, 'errorLog') or 0) + 1
     if( view['retries'] ):
       if( errorLog >= view['retries'] ):
         maxRetry = True
